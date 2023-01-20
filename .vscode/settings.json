@@ -1,0 +1,21 @@
+// Normal
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/css",
+        }
+    ]
+}
+
+// Minify
+// {
+//     "liveSassCompile.settings.formats": [
+//         {
+//             "format": "compressed",
+//             "extensionName": ".min.css",
+//             "savePath": "/css",
+//         }
+//     ]
+// }
