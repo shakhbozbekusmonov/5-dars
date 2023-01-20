@@ -471,6 +471,7 @@ img {
   top: 0;
   right: 0;
   bottom: 0;
+  z-index: 100;
   width: calc(100% - 120px);
   padding-top: 56px;
   padding-right: 26px;
@@ -488,6 +489,7 @@ img {
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 50;
   background-color: rgba(0, 39, 43, 0.6);
   transform: translateX(450%);
   transition: transform 0.3s ease;
