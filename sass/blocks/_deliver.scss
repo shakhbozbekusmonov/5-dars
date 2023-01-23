@@ -1,0 +1,71 @@
+/************ DELIVER STYLES START *************/ 
+.deliver{
+    padding-top: 140px;
+    padding-bottom: 151px;
+    background-color: #004047;
+    background-image: url("../../images/deliver-bg-start.png"), url("../../images/deliver-bg-end.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 690px) top, calc(50% + 670px) calc(50% + 365px);
+
+    &__title{
+        width: 100%;
+        max-width: 932px;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 56px;
+        margin-left: auto;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        text-align: center;
+        color: #fff;
+    }
+
+    &__title--success{
+        color: $deliver-section-text-color;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        @include list-unstyled;
+    }
+
+    &__item{
+        width: 100%;
+        max-width: 350px;
+        padding-top: 36px;
+        text-align: center; 
+        background-image: url("../../images/quote.svg");
+        background-repeat: no-repeat;
+        background-position: calc(50%) top;
+    }
+
+    &__item--text{
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 24px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+        color: #fff;
+    }
+
+    &__item--username{
+        margin-top: 0;
+        margin-bottom: 2px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        color: $deliver-section-text-color;
+    }
+
+    &__item--jobtitle{
+        margin-top: 0;
+        margin-bottom: 32px;
+        font-size: 13px;
+        line-height: 18px;
+        color: #fff;
+    }
+}
+/************ DELIVER STYLES END *************/ 
