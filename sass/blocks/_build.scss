@@ -1,0 +1,84 @@
+/************** BUILD STYLES START ***************/ 
+.build{
+    padding-top: 140px;
+    padding-bottom: 140px;
+    background-color: $build-section-bg-color;
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__wrapper--start{
+        width: 100%;
+        max-width: 445px;
+    }
+
+    &__title{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        color: #fff;        
+
+        &::before{
+            display: block;
+            width: 50px;
+            height: 4px;
+            margin-bottom: 54px;
+            background-color: $main-subtitle-color;
+            content: "";
+        }
+    }
+
+    &__list{
+        width: 100%;
+        max-width: 540px;
+        padding-top: 54px;
+        @include list-unstyled;
+    }
+
+    &__item:not(:last-child){
+        margin-bottom: 32px;
+    }
+
+    &__item{
+        position: relative;
+        padding-left: 95px;
+        &::before{
+            position: absolute;
+            left: 0;
+            display: inline-block;
+            content: url("../../images/person.svg");
+        }
+
+        &:nth-child(2)::before{
+            content: url("../../images/setting.svg");
+        }
+
+        &:nth-child(3)::before{
+            content: url("../../images/treyd.svg");
+        }
+    }
+
+    &__item--title{
+        margin-top: 0;
+        margin-bottom: 16px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        color: $main-subtitle-color;
+    }
+
+    &__item--text{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+        color: #fff;
+        opacity: 0.8;
+    }
+}
+/************** BUILD STYLES END ***************/ 

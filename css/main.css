@@ -684,4 +684,81 @@ img {
   }
 }
 /********** HERO MOBILE STYLES END **********/
-/************* HERO STYLES END *************//*# sourceMappingURL=main.css.map */
+/************* HERO STYLES END *************/
+/************** BUILD STYLES START ***************/
+.build {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-color: #012F34;
+}
+.build__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.build__wrapper--start {
+  width: 100%;
+  max-width: 445px;
+}
+.build__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #fff;
+}
+.build__title::before {
+  display: block;
+  width: 50px;
+  height: 4px;
+  margin-bottom: 54px;
+  background-color: #F67E7E;
+  content: "";
+}
+.build__list {
+  width: 100%;
+  max-width: 540px;
+  padding-top: 54px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.build__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.build__item {
+  position: relative;
+  padding-left: 95px;
+}
+.build__item::before {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  content: url("../../images/person.svg");
+}
+.build__item:nth-child(2)::before {
+  content: url("../../images/setting.svg");
+}
+.build__item:nth-child(3)::before {
+  content: url("../../images/treyd.svg");
+}
+.build__item--title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #F67E7E;
+}
+.build__item--text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+/************** BUILD STYLES END ***************//*# sourceMappingURL=main.css.map */
