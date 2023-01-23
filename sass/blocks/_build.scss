@@ -3,6 +3,9 @@
     padding-top: 140px;
     padding-bottom: 140px;
     background-color: $build-section-bg-color;
+    background-image: url("../../images/build-bg.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 760px) bottom;
 
     &__wrapper{
         display: flex;

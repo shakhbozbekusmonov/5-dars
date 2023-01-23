@@ -690,6 +690,9 @@ img {
   padding-top: 140px;
   padding-bottom: 140px;
   background-color: #012F34;
+  background-image: url("../../images/build-bg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 760px) bottom;
 }
 .build__wrapper {
   display: flex;
