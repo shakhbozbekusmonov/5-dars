@@ -1,0 +1,118 @@
+/************* HERO STYLES START *************/
+.hero {
+    padding-top: 56px;
+    padding-bottom: 250px;
+    background-color: $header-bg-color;
+    background-image: url("../../images/hero-bg-start.png"), url("../../images/hero-bg-end.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 770px) 56px, calc(50% + 375px) calc(50% + 260px);
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__wrapper--start {
+        width: 100%;
+        max-width: 580px;
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: 'Livvic';
+        font-weight: 700;
+        font-size: 100px;
+        line-height: 100px;
+        color: #fff;
+    }
+
+    &__title--orange {
+        color: $main-subtitle-color;
+    }
+
+    &__wrapper--end {
+        width: 100%;
+        max-width: 445px;
+    }
+
+    &__desc {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        color: #fff;
+
+        &::before {
+            display: block;
+            width: 50px;
+            height: 4px;
+            margin-bottom: 79px;
+            background-color: $deliver-section-text-color;
+            content: "";
+        }
+    }
+}
+
+/********** HERO MOBILE STYLES START **********/
+@media only screen and (max-width: 768px) {
+    .hero {
+        padding-bottom: 197px;
+        background-position: calc(50% - 770px) 56px, calc(50%) calc(50% + 240px);
+        background-size: 90%;
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__title {
+            margin-bottom: 18px;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 56px;
+            color: #fff;
+        }
+
+        &__desc {
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 28px;
+            color: #fff;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .hero {
+        background-position: calc(50% - 770px) 56px, calc(50%) calc(50% + 260px);
+
+        &__title {
+            margin-bottom: 24px;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 40px;
+            color: #fff;
+        }
+
+        &__desc {
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 28px;
+            color: #fff;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+/********** HERO MOBILE STYLES END **********/
+/************* HERO STYLES END *************/
